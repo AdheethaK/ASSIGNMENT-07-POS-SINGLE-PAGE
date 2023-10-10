@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100&family=Oxygen:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/body-customer.css">
+    <link rel="stylesheet" href="css/body-item.css">
+    <link rel="stylesheet" href="css/body-order.css">
+    <link rel="stylesheet" href="css/add-to-my-cart.css">
+    <link rel="stylesheet" href="css/items-section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/normalization.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/coffee-house-logo-1.png" alt="coffee-house-log" width="200" height="auto">
+        </div>
+        <div id="menu">
+            <ul>
+                <li>CUSTOMER</li>
+                <li>ITEM</li>
+                <li>ORDER</li>
+            </ul>
+        </div>
+        <div id="user-account">
+            <div id="profile-pic"></div>
+            <h4>USERNAME</h4>
+            <h5>email@gmail.com</h5>
+        </div>
+    </header>
+
+<!--    customer page-->
+    <div id="customer-body">
+        <div id="vertical-line-customer"></div>
+        <h1>CUSTOMER</h1>
+
+<!--        customer form-->
+        <div id="customer-form">
+
+            <!--id-->
+            <div><h5>ID:</h5></div>
+            <div>
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <!--first name-->
+            <div><h5>FIRST NAME:</h5></div>
+            <div>
+                <input class="form-control" type="text"aria-label="default input example">
+            </div>
+
+            <!--last name-->
+            <div><h5>LAST NAME:</h5></div>
+            <div>
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <!--email-->
+            <div><h5>EMAIL:</h5></div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <!--address-->
+            <div><h5>ADDRESS:</h5></div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+
+<!--        customer button panel-->
+        <div id="customer-btn-panel">
+            <button type="button" class="btn btn-info">NEW ID</button>
+            <button type="button" class="btn btn-secondary">SEARCH</button>
+            <button type="button" class="btn btn-danger">DELETE</button>
+            <button type="button" class="btn btn-warning">UPDATE</button>
+            <button type="button" class="btn btn-success">SAVE</button>
+        </div>
+
+<!--        customer all table-->
+        <div id="customer-all-table">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Panadura</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Panadura</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>Panadura</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!--    item page-->
+    <div id="item-body">
+        <div id="vertical-line-item"></div>
+        <h1>ITEM</h1>
+
+<!--        item form-->
+        <div id="item-form">
+
+            <!--code-->
+            <div><h5>CODE:</h5></div>
+            <div>
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <!--name-->
+            <div><h5>NAME:</h5></div>
+            <div>
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <!--quantity-->
+            <div><h5>QUANTITY:</h5></div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput2">
+            </div>
+
+            <!--price-->
+            <div><h5>PRICE:</h5></div>
+            <div class="mb-3">
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+        </div>
+
+<!--        item-button-panel-->
+        <div id="item-btn-panel">
+            <button type="button" class="btn btn-info">NEW ID</button>
+            <button type="button" class="btn btn-secondary">SEARCH</button>
+            <button type="button" class="btn btn-danger">DELETE</button>
+            <button type="button" class="btn btn-warning">UPDATE</button>
+            <button type="button" class="btn btn-success">SAVE</button>
+        </div>
+
+<!--        item-all-table-->
+        <div id="item-all-table">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">CODE</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">QTY</th>
+                    <th scope="col">PRICE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--    order page-->
+    <div id="order-body">
+        <!--        my-cart-overlay-->
+        <div id="my-cart-overlay">
+            <div id="my-cart">
+                <div id="header-my-cart">
+                    <div id="back">
+                        <img src="img/previous.png" alt="" width="40px" height="40px">
+                    </div>
+                    <div id="vertical-line-my-cart"></div>
+                    <h2>ADD TO CART</h2>
+
+                    </div>
+                <div id="total-label">
+                    <h3>TOTAL:</h3>
+                </div>
+                <div id="total">
+                    <h3>7000.00</h3>
+                </div>
+                <div id="customer-id">
+                    <h5>C004</h5>
+                </div>
+                <!--cart-->
+                <div id="cart">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>1.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Ioo5</h5>
+                                <p >Iced Coffee</p>
+                            </div>
+                            <div class="price">
+                                <p>320.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">3</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>2.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Ioo3</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>20.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">1</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>3.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Io10</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>80.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">2</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>4.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Ioo6</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>170.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">4</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>5.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Io21</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>240.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">2</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>6.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Io11</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>50.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">1</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>7.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Ioo2</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>150.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">2</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="item-number">
+                                    <p>8.</p>
+                                </div>
+                                <div class="fw-bold"></div>
+                                <h5>Ioo7</h5>
+                                <p >Content for list item</p>
+                            </div>
+                            <div class="price">
+                                <p>5000.00</p>
+                            </div>
+                            <span class="badge bg-primary rounded-pill" >5</span>
+                            <div class="delete">
+                                <img src="img/delete%20(2).png" alt="delete-img" width="40px" height="40px">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="items-list">
+                <div id="items-list-header">
+                    <h3>COFFEE</h3>
+                    <h3>FOOD</h3>
+                </div>
+                <div id="items-list-body" class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                        <div class="col-sm">
+                            One of three columns
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vertical-line-order"></div>
+        <h1>ORDER</h1>
+
+        <!--        order form-->
+        <div id="order-form">
+
+            <!--id-->
+            <div><h5>ID:</h5></div>
+            <div>
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <!--customer-->
+            <div><h5>CUSTOMER:</h5></div>
+            <div>
+                <select class="form-select">
+                    <option value="1">
+                        <p>C001</p>
+                    </option>
+                    <option value="2">
+                        <p>C002</p>
+                    </option>
+                    <option value="3">
+                        <p>C003</p>
+                    </option>
+                </select>
+            </div>
+
+            <!--items list-->
+            <div><h5>MY LIST:</h5></div>
+            <div>
+                <img src="img/add-cart.png" alt="add-cart" width="80%" height="auto">
+            </div>
+
+            <!--total-->
+            <div><h5>TOTAL:</h5></div>
+            <div class="mb-3">
+                <input class="form-control" type="text" aria-label="default input example">
+            </div>
+        </div>
+
+        <!--        order-button-panel-->
+        <div id="order-btn-panel">
+            <button type="button" class="btn btn-info">NEW ID</button>
+            <button type="button" class="btn btn-secondary">SEARCH</button>
+            <button type="button" class="btn btn-danger">DELETE</button>
+            <button type="button" class="btn btn-warning">UPDATE</button>
+            <button type="button" class="btn btn-success">SAVE</button>
+
+        </div>
+
+        <!--        order-all-table-->
+        <div id="order-all-table">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">CUSTOMER</th>
+                    <th scope="col">LIST</th>
+                    <th scope="col">TOTAL</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer></footer>
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
